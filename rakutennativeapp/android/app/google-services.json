@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "899424221864",
+    "firebase_url": "https://learning-bb44e.firebaseio.com",
+    "project_id": "learning-bb44e",
+    "storage_bucket": "learning-bb44e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:899424221864:android:6da1a7e9901d3089c7e09d",
+        "android_client_info": {
+          "package_name": "com.rakutennativeapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "899424221864-eihju23qaa51b2og3aui8h4ob38ifnku.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rakutennativeapp",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "899424221864-64lqrj6hhl7t0lmobgetv3hga3taha2v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKOPUGLCQp-duKeHDsEWxpejN4LQc2HIE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "899424221864-64lqrj6hhl7t0lmobgetv3hga3taha2v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
