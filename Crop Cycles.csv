@@ -1,0 +1,30 @@
+,Crops,State
+0,"['urud', 'chickpea', 'gram', 'peas', 'pulses', 'arhar', 'paddy', 'wheat']",Andhra Pradesh
+1,"['maize', 'wheat', 'rice', 'gram']",Arunachal Pradesh 
+2,"['urud', 'gram', 'maize', 'masur', 'wheat', 'rice', 'paddy']",Assam
+3,"['masur', 'pulses', 'paddy', 'wheat']",Bihar
+4,"['pulses', 'arhar', 'paddy']",Chhattisgarh
+5,"['rice', 'paddy', 'maize']",Goa
+6,"['gram', 'maize', 'rice', 'wheat']",Gujarat
+7,"['chickpea', 'gram', 'peas', 'pulses', 'rice', 'paddy', 'wheat']",Haryana
+8,"['rice', 'paddy', 'wheat']",Himachal Pradesh
+9,"['rice', 'paddy', 'wheat']",Jammu and Kashmir
+10,"['rice', 'paddy', 'gram']",Jharkhand
+11,"['urud', 'chickpea', 'gram', 'maize', 'peas', 'redgram', 'rice', 'wheat']",Karnataka
+12,"['urud', 'arhar', 'rice', 'paddy']",Kerala
+13,"['urud', 'pea', 'gram', 'arhar']",Madhya Pradesh
+14,"['urud', 'chickpea', 'gram', 'greengram', 'maize', 'arhar', 'paddy', 'wheat']",Maharashtra
+15,"['rice', 'paddy', 'wheat']",Manipur
+16,"['rice', 'arhar', 'paddy']",Meghalaya
+17,"['rice', 'paddy', 'wheat']",Mizoram
+18,"['rice', 'arhar', 'paddy', 'wheat']",Nagaland
+19,"['urud', 'gram', 'rice', 'wheat', 'paddy']",Odisha
+20,"['gram', 'masur', 'peas', 'rice', 'paddy', 'peas', 'wheat']",Punjab
+21,"['gram', 'peas', 'pulses', 'arhar', 'rice', 'paddy', 'wheat']",Rajasthan
+22,"['rice', 'paddy', 'wheat']",Sikkim
+23,"['urud', 'gram', 'maize', 'rice', 'paddy']",Tamil Nadu
+24,"['rice', 'paddy', 'wheat']",Telangana
+25,"['rice', 'paddy', 'wheat', 'arhar']",Tripura
+26,"['urud', 'chickpea', 'gram', 'maize', 'masur', 'pulses', 'arhar', 'rice', 'paddy']",Uttar Pradesh
+27,"['rice', 'paddy', 'wheat', 'peas']",Uttarakhand
+28,"['urud', 'gram', 'masur', 'pulses', 'arhar', 'rice', 'wheat']",West Bengal
