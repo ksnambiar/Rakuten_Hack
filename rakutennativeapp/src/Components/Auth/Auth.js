@@ -4,12 +4,14 @@ import auth from "@react-native-firebase/auth"
 import {Button,Input,Card} from "react-native-elements";
 import Icon from "react-native-vector-icons/FontAwesome";
 import {Actions} from "react-native-router-flux"
-export default class Auth extends Component {
+import {storeKey,getData,createProfileNew,getCurrentProfile} from "../../Store/actions/authAction"
+import {connect} from "react-redux"
+class Auth extends Component {
     constructor(props) {
         super(props)
     
         this.state = {
-             phone:"8848779798",
+             phone:"",
              otp:"",
              confirmResult:null,
              recaptchaVerifier:null,
@@ -25,11 +27,6 @@ export default class Auth extends Component {
     }
 
     componentDidMount(){
-        // this.state.recaptchaVerifier = new firebase.auth.RecaptchaVerifier("recaptcha-container",
-        //  {
-        //     size:"invisible"
-        //      // other options
-        //  });
      }
      onOtp(){
         const phoneNumber = this.state.phone;
@@ -55,17 +52,20 @@ export default class Auth extends Component {
         this.state.confirmResult.confirm(this.state.otp).then(object=>{
             console.log(object,"success")
             Actions.postAuth()
-            if(object.additionalUserInfo.isNewUser){
-                // localStorage.setItem("uid",object.user.uid)
-                // this.props.history.push("/user/register/"+this.state.phone)
-                // this.props.createProfileNew(object.user.uid,object.user.providerData[0],this.props.history)
-                console.log("new user login")
-            }else{
-                // localStorage.setItem("uid",object.user.uid)
-                // this.props.getCurrentProfile(object.user.uid)
-                // this.props.history.push("/dashboard")
-                console.log("old user log")
-            }    
+            // if(object.additionalUserInfo.isNewUser){
+            //     //localStorage.setItem("uid",object.user.uid)
+            //     this.props.storeKey('uid',object.user.uid);
+            //     // this.props.history.push("/user/register/"+this.state.phone)
+            //     this.props.createProfileNew(object.user.uid,object.user.providerData[0],this.props.history)
+            //     console.log("new user login")
+            //     Actions.postAuth()
+            // }else{
+            //     // localStorage.setItem("uid",object.user.uid)
+            //     this.props.getCurrentProfile(object.user.uid)
+            //     // this.props.history.push("/dashboard")
+            //     console.log("old user log")
+            //     Actions.postAuth()
+            // }    
     })
     .catch(err=>{
         console.log(err)
@@ -91,9 +91,13 @@ export default class Auth extends Component {
                     <Button title="Continue" onPress={this.onSubmit} />
                 </View></View>:null}
             </Card>
+            <Card>
+                {this.state.error?<Text>Some error occured</Text>:null}
+            </Card>
             </View>
         )
     }
 }
 
+export default connect(null,{storeKey,getData,createProfileNew,getCurrentProfile})(Auth)
 // const style = StyleSheet.create()

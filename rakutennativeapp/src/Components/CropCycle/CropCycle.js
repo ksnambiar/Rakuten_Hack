@@ -64,11 +64,13 @@ export default class CropCycle extends Component {
                 </View>
                 </Card>
                 </View>
+                <Card>
                 <View style={{justifyContent:"center",alignItems:"center"}}>
                     {
-                        this.state.datareturned?<Text>marketValue:{this.state.datareturned['Market Value']}</Text>:null
+                        this.state.datareturned?<Text style={{fontSize:25}}>Projected Value:{this.state.datareturned['Market Value']}</Text>:null
                     }
                 </View>
+                </Card>
                 <View>
                 {this.state.datareturned?
                     

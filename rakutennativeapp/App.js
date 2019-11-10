@@ -12,7 +12,8 @@ import Navigation from "./src/Navigation"
 import firebase from '@react-native-firebase/app';
 import database from "@react-native-firebase/database"
 import auth from "@react-native-firebase/auth"
-
+import {Provider} from "react-redux";
+import Store from "./src/Store/Store"
 // TODO(you): import any additional firebase services that you require for your app, e.g for auth:
 //    1) install the npm package: `yarn add @react-native-firebase/auth@alpha` - you do not need to
 //       run linking commands - this happens automatically at build time now
@@ -33,7 +34,9 @@ const firebaseCredentials = Platform.select({
 export default class App extends Component{
   render() {
     return (
+      <Provider store={Store}>
       <Navigation />
+      </Provider>
     );
   }
 }
