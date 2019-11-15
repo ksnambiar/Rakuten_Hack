@@ -23,6 +23,19 @@ class Dashboard extends Component {
     }
     
     componentDidMount(){
+	fetch("https://community-open-weather-map.p.rapidapi.com/weather?callback=test&id=2172797&units=%22metric%22%20or%20%22imperial%22&mode=xml%2C%20html&q=London%2Cuk", {
+	"method": "GET",
+	"headers": {
+		"x-rapidapi-host": "community-open-weather-map.p.rapidapi.com",
+		"x-rapidapi-key": "77558e914emsh8de3b6357a2688dp16ff4djsn62400c827671"
+	}
+})
+.then(response => {
+	console.log(response);
+})
+.catch(err => {
+	console.log(err);
+});
         const uid = localStorage.getItem('uid')
         this.props.getFarmerdetails(uid)
         this.getMyLocation().then(obj=>{
